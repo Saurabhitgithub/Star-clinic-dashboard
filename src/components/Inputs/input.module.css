@@ -1,0 +1,120 @@
+.label_text {
+  font-family: var(--fontFamily-500);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #344054;
+}
+.label_text_login {
+  font-family: var(--fontFamily-500);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: white !important;
+}
+
+.star_icon {
+  font-weight: var(--fontFamily-400);
+  font-size: 20px;
+  margin-left: 2px;
+  color: red;
+}
+
+.input_container {
+  position: relative;
+  .input {
+    width: 100%;
+    border: 1px solid var(--input-border-color-default);
+    border-radius: 8px;
+    padding: 8px 5px 8px 10px;
+    font-family: var(--fontFamily-400);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+    height: 40px;
+  }
+  .textarea_design{
+    width: 100%;
+    border: 1px solid var(--input-border-color-default);
+    border-radius: 8px;
+    padding: 8px 35px 8px 10px;
+  }
+
+  .input::placeholder {
+    font-family: var(--fontFamily-400);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #667085;
+  }
+  .input_search_icon {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+  }
+}
+
+.dragAndDrop_main_con {
+  border: 1px solid #eaecf0;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  .browse_text {
+    font-family: var(--fontFamily-300);
+    font-size: 14px;
+    font-weight: 300;
+    color: #191d23;
+    .dragAndDrop_click_upload {
+      font-family: var(--fontFamily-600);
+      font-size: 14px;
+      font-weight: 600;
+      color: #070b5c;
+    }
+  }
+  .dragAndDrop_upload_icon_con {
+    background-color: #f2f4f7;
+    border: 6px solid #f9fafb;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .drop_image_con {
+    border: 2px dashed #d3d3d3;
+    border-radius: 5px;
+    position: relative;
+    min-height: 100px;
+    width: 100px;
+
+    .drop_remove_icon {
+      position: absolute;
+      top: -2px;
+      background-color: white;
+      right: -3px;
+      border-radius: 50%;
+      border: 1px solid var(--primary-color) !important;
+      padding: 3px;
+    }
+  }
+}
+
+
+.uploadProfile_main_con{
+  border: 1px solid #E4E9EF;
+  padding:20px;
+  background-color: white;
+  border-radius: 10px;
+  .uploadProfile_image{
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+  }
+  .uploadProfile_text{
+    font-family: var(--fontFamily-400);
+    font-size: 14px;
+    color: #344054;
+  }
+}
+.error_uploadProfile_con{
+  border: 1px solid red;
+}

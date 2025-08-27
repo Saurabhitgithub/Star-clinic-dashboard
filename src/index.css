@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* used for fontweight 700 */
+@font-face {
+  font-family: 'Instrument-Bold';
+  src: url('./assets/fonts/InstrumentSans-Bold.ttf') format('woff2');
+}
+
+/* used for fontweight 600 */
+@font-face {
+  font-family: 'Instrument-SemiBold';
+  src: url('./assets/fonts/InstrumentSans-SemiBold.ttf') format('woff2');
+}
+
+/* used for fontweight 500  */
+@font-face {
+  font-family: 'Instrument-Medium';
+  src: url('./assets/fonts/InstrumentSans-Medium.ttf') format('woff2');
+}
+
+/* used for fontweight 400 */
+@font-face {
+  font-family: 'Instrument-Regular';
+  src: url('./assets/fonts/InstrumentSans-Regular.ttf') format('woff2');
+}
+/* used for fontweight 400 */
+@font-face {
+  font-family: 'Neuton-Regular';
+  src: url('./assets/fonts/Neuton-Regular.ttf') format('woff2');
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope-VariableFont_wght.ttf') format('woff2');
+}
+
+.font_manrope{
+font-family: Manrope !important;
+}
+*{
+  font-family: var(--fontFamily-400);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.MuiAutocomplete-option {
+  font-family: Instrument-Regular;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.ql-toolbar {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.ql-container {
+  border-radius: 0px 0px 8px 8px;
+}

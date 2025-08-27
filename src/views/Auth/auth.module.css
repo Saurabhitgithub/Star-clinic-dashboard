@@ -1,0 +1,44 @@
+.signIn_container {
+  margin: auto;
+  max-width: 500px;
+
+  .forgot_password_text {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    font-family: var(--fontFamily-600);
+    cursor: pointer;
+    color: white;
+  }
+}
+.forgot_password_con {
+  margin: auto;
+  max-width: 500px;
+
+  .email_text {
+    color: #0E1680;
+    font-family: var(--fontFamily-500);
+    font-size: 16px;
+    text-align: center;
+  }
+  .didnot_text {
+    font-family: var(--fontFamily-400);
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 24px;
+    color: #475467;
+  }
+  .resend_text {
+    color: #0e1680;
+  }
+  .login_text {
+    font-family: var(--fontFamily-600);
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 32px;
+    cursor: pointer;
+  }
+}

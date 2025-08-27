@@ -1,0 +1,17 @@
+
+.viewCustomerSupport_main_con{
+
+    .listByDot_title1 {
+        font-family: var(--fontFamily-600);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        color: #101828;
+    }
+    .viewCustomer_biography_text{
+        font-family: var(--fontFamily-400);
+        font-size: 12px;
+        color: #344054;
+        margin-top: 7px;
+    }
+}

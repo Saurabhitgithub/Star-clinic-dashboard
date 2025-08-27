@@ -1,0 +1,16 @@
+:root {
+    --primary-color: #FD5E10;
+    --secondary-color:#45C1B6;
+    --grey-color: #8e8e8e;
+    --fontFamily-400: "Manrope";
+    --fontFamily-500: Manrope;
+    --fontFamily-600: Manrope;
+    --fontFamily-700: Instrument-Bold;
+    --fontFamily-Neuton-400: Neuton-Regular;
+    --input-border-color-default: #D0D5DD;
+
+    --input-border-color-hovered: #bfbfbf;
+    --input-border-color-focused: #bfbfbf;
+    --input-placeholder-color: #64748B;
+    --input-text-color: black
+}

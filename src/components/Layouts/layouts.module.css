@@ -1,0 +1,60 @@
+.loginSignupLayout_container {
+  .bg_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .auth_heading {
+    font-family: var(--fontFamily-600);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+    color: white;
+    margin-top: 64px;
+  }
+  .sub_heading {
+    font-family: var(--fontFamily-400);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #667085;
+    margin-top: 8px;
+  }
+}
+
+.mainBodyContainer_con {
+  padding: 36px;
+  height: 100%;
+}
+@media (max-width: 900px) {
+  .mainBodyContainer_con {
+    padding: 10px;
+  }
+}
+
+.patientViewLayout_con {
+  .patientView_header {
+    padding: 20px;
+    .patient_view_name {
+      font-size: 18px;
+      font-weight: 700;
+      font-family: var(--fontFamily-600);
+    }
+  }
+  
+  .patientView_navlink {
+    font-family: var(--fontFamily-400);
+    font-size: 12px;
+    & span {
+      color: var(--primary-color);
+      background-color: rgba(255, 166, 0, 0.156);
+      padding: 5px;
+      margin-left: 10px;
+      border-radius: 5px;
+    }
+  }
+  .patientView_navlink:hover {
+    color: var(--primary-color);
+  }
+}

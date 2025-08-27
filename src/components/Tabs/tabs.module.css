@@ -1,0 +1,19 @@
+.tabs_main_con {
+  background-color: #f2f3fd;
+  border: 1px solid #e5e7fb;
+  border-radius: 10px;
+  padding: 6px;
+
+  .tab_item {
+    color: #667085;
+    font-family: var(--fontFamily-600);
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .active_tab_item {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+  }
+}

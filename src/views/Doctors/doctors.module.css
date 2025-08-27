@@ -1,0 +1,18 @@
+.viewDoctor_main_con {
+  .viewDoctor_title1 {
+    font-family: var(--fontFamily-600);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #101828;
+  }
+
+  .basic_text {
+    font-family: var(--fontFamily-400);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #344054;
+  }
+
+}

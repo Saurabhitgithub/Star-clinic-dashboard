@@ -1,0 +1,13 @@
+.patientViewLayout_con {
+    .patientView_header {
+      padding: 20px;
+      .patient_view_name {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: var(--fontFamily-600);
+      }
+    }
+    
+  }
+
+  

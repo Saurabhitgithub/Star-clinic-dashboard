@@ -1,0 +1,73 @@
+
+const handleUpload = async () => {
+  const selectedAlbum = albums[selectedAlbumIndex];
+  if (!selectedAlbum || !selectedAlbum._id) {
+    toast.error("Invalid album selected.");
+    return;
+  }
+
+  try {
+    loader.start();
+
+    const fileEntries = getValues().fileData || [];
+    const filesUpload = fileEntries
+      .filter(entry => entry.file instanceof File)
+      .map(entry => entry.file);
+
+    let uploadedUrls = [];
+
+    if (filesUpload.length > 0) {
+      const uploadResponse = await uploadMultipleDocs(filesUpload);
+      if (!uploadResponse?.data?.data) {
+        throw new Error("Failed to upload files");
+      }
+      uploadedUrls = uploadResponse.data.data;
+    }
+
+    // Create file objects for uploaded files
+    const newFiles = uploadedUrls.map(url => ({ fileUrl: url }));
+
+    // Combine form files (excluding raw File objects) with newly uploaded ones
+    const existingFiles = (fileEntries || []).filter(entry => !(entry.file instanceof File));
+    const combinedFiles = [...existingFiles, ...newFiles];
+
+    const saveData = {
+      album_name: selectedAlbum.album_name,
+      fileData: combinedFiles,
+    };
+
+    const saveResponse = await updatePhotosById(selectedAlbum._id, saveData);
+
+    if (saveResponse && saveResponse.data) {
+      toast.success("Photos uploaded successfully!");
+      await fetchAlbums(patientData._id);
+      setIsUploadPhotoOpen(false);
+      setUploadedFiles([]);
+    } else {
+      throw new Error("Failed to save photos to album");
+    }
+  } catch (error) {
+    console.error("Upload error:", error);
+    toast.error(error.message || "An error occurred during upload.");
+  } finally {
+    loader.stop();
+  }
+};
+
+
+[
+    {
+        "fileUrl": "https://star-clinic.b-cdn.net/star-clinic/image (47).png",
+        "fileName": "star-clinic/image (47).png"
+    }
+]
+
+
+[
+    {
+        "fileUrl": {
+            "fileUrl": "https://star-clinic.b-cdn.net/star-clinic/image (46).png",
+            "fileName": "star-clinic/image (46).png"
+        }
+    }
+]

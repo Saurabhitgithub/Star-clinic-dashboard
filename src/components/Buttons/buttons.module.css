@@ -1,0 +1,44 @@
+.iconButton_container {
+  background-color: #393939;
+  border: 1px solid #6e6c6c;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter_btn {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  height: 40px;
+  padding-inline: 12px;
+  font-family: var(--font-family-600);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #344054;
+}
+
+.gridAndlistButton_main_con {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d0d5dd;
+  width: 80px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .gridListButton {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridListActiveButton {
+    /* background-color: var(--primary-color); */
+    background-color: #EAECF0;
+  }
+}

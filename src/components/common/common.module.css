@@ -1,0 +1,100 @@
+.userProfile_img_con {
+  & img {
+    width: 40px;
+  }
+}
+.pageHeading_con {
+  .pageHeading {
+    font-family: var(--fontFamily-600);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #101828;
+  }
+
+  .pageSubheading {
+    font-family: var(--fontFamily-400);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #344054;
+
+    .showing_text {
+      font-family: var(--fontFamily-500);
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #1d2939;
+    }
+  }
+}
+
+.iconAndLabel_con {
+  .iconAndLabel_label {
+    font-family: var(--fontFamily-500);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    word-break: break-word;
+    color: #475467;
+  }
+}
+
+.inputErrorMsgCon {
+  font-family: var(--fontFamily-500);
+  color: red;
+}
+
+.treatmentAndStatus {
+  .treatmentAndStatus_header {
+    font-family: var(--fontFamily-700);
+  }
+  .treatmentAndStatus_date {
+    font-family: var(--fontFamily-500);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #475467;
+    margin-top: 5px;
+  }
+  .doctor_name{
+    font-family: var(--fontFamily-600);
+    font-size: 18px;
+  }
+  .treatmentStatus {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+}
+
+.breadcrum_main_con {
+  .breadcrum_item {
+    font-family: var(--fontFamily-500);
+    color: #475467;
+  }
+  .active_breadcrumItem {
+    color: #101828;
+  }
+}
+
+.imageLabelValue_main_con {
+  .imageLabelValue_label_text {
+    font-family: var(--fontFamily-600);
+    font-size: 14px;
+    color: #101828;
+  }
+  .imageLabelValue_value_text {
+    font-family: var(--fontFamily-400);
+    font-size: 12px;
+    color: #344054;
+  }
+}

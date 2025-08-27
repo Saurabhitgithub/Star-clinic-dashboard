@@ -1,0 +1,16 @@
+.customDialog_container {
+
+
+  .customDialog_title {
+    font-family: var(--fontFamily-700);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    color: #2c3e50;
+    border-bottom: 1px solid #eaecf0;
+    padding: 20px;
+  }
+  .customDialog_content {
+    padding: 17px 20px !important;
+  }
+}
